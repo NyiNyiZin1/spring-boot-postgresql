@@ -1,4 +1,4 @@
-# Example Implementation of a Spring Boot PostgreSql && JSONB manipulation
+# Example Implementation of a Spring Boot PostgreSql
 
 ## Prerequisites
 
