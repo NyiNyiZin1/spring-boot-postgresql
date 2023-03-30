@@ -25,5 +25,5 @@ public class Student {
 	private Long classRoomId;
 	@Type(JsonBinaryType.class)
 	@Column(name = "json_b", columnDefinition = "jsonb")
-	private String jsonObj;
+	private String jsonObj;//This is call Json String=> in Teacher.class Student is json Object
 }
