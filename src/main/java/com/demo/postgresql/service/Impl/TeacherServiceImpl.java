@@ -2,6 +2,7 @@ package com.demo.postgresql.service.Impl;
 
 import com.demo.postgresql.entity.Student;
 import com.demo.postgresql.entity.Teacher;
+import com.demo.postgresql.models.request.StudentRequest;
 import com.demo.postgresql.models.request.TeacherRequest;
 import com.demo.postgresql.repository.TeacherRepo;
 import com.demo.postgresql.service.TeacherService;
@@ -16,6 +17,11 @@ public class TeacherServiceImpl implements TeacherService {
     @Override
     public Teacher findByStudentName(String name) {
         return teacherRepo.findByStudentName(name);
+    }
+
+    @Override
+    public Teacher updateTeacher(StudentRequest studentRequest) {
+        return teacherRepo.updateTeacher(studentRequest.getId());
     }
 
     @Override

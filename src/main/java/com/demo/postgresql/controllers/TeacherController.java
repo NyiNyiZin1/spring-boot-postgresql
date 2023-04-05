@@ -1,6 +1,7 @@
 package com.demo.postgresql.controllers;
 
 import com.demo.postgresql.entity.Teacher;
+import com.demo.postgresql.models.request.StudentRequest;
 import com.demo.postgresql.models.request.TeacherRequest;
 import com.demo.postgresql.service.StudentService;
 import com.demo.postgresql.service.TeacherService;
@@ -22,5 +23,10 @@ public class TeacherController {
     @PostMapping("/create")
     public Teacher createTeacher(@RequestBody TeacherRequest teacherRequest) {
         return teacherService.createTeacher(teacherRequest);
+    }
+
+    @PutMapping("/update")
+    public Teacher updateTeacher(@RequestBody StudentRequest studentRequest) {
+        return teacherService.updateTeacher(studentRequest);
     }
 }
